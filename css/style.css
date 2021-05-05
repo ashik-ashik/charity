@@ -1,0 +1,606 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* global CSS Start */
+.container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+h1, h2, h3, h4, h5, p{
+    font-family: 'roboto';
+    color: #000;
+}
+p{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-family: 'roboto';
+}
+img{
+    width: 100%;
+}
+
+/* global CSS End */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+/* #################################################### */
+/* top header section style Start */
+.top-header{
+    width: 100%;
+    height: 50px;
+    background-color: #47C62E;
+    overflow: hidden;
+    line-height: 50px;
+}
+.top-header a{
+    color: #eee;
+    font-size: 15px;
+    font-weight: 400;
+}
+.top-header a:hover{
+    color: rgb(65, 65, 65);
+}
+.contact{
+    width: 50%;
+    float: left;
+}
+.icon{
+    width: 50%;
+    float: left;
+    text-align: right;
+}
+.icon .fab{
+    color: #fff;
+    padding: 8px 13px;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+.icon .fab:hover{
+    color: #fff;
+    background-color: #000;
+    border-color:#000;
+    border-radius: 3px;
+}
+/* top header section style end */
+
+
+
+/* ##################################################### */
+/* menu header section start */
+.menu-header{
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 5px 2px 8px #888888;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 5px;
+    z-index: 999;
+}
+.top-logo{
+    float: left;
+    width: 40%;
+}
+.top-logo img{
+    width: auto;
+    height: 50px;
+    margin-top: 8px;
+}
+.topnav{
+    float: right;
+    width: 60%;
+}
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 11px;
+    text-align: right;
+  }
+
+  .topnav li {
+    display: inline-block;
+  }
+  
+  .topnav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 22px;
+    color: #000;
+  }
+  
+  .topnav li a:hover{
+    background-color: #47C62E;
+    color: #fff;
+  }
+  /* menu bar section style end */
+
+
+
+/* ############################################ */
+/* slider section Start CSS */
+.slider{
+    width: 100%;
+    height: 500px;
+}
+.slider .slide img{
+    width: 100%;
+    height: 500px;
+}
+.slide{
+    width: 100%;
+    height: 450px;
+    position: relative;
+}
+.slide {display: none}
+img {vertical-align: middle;}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  background-color: #0000009a;
+  border-radius: 0px 0px 4px 0px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  border: 1px solid #272727;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #9c9c9c;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slide .slide-description{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    padding: 50px 70px;
+    background-color: #000000b2;
+    text-align: center;
+}
+.slide .slide-description h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 40px;
+}
+.slide .slide-description button{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 8px 20px;
+    margin-top: 30px;
+    border: 2px solid #eee;
+    background-color: #000000b2;
+    cursor: pointer;
+}
+.slide .slide-description button:hover{
+    background-color: #28a80f;
+    color: #eee;
+    border-color: #28a80f;
+    border-radius: 3px;
+}
+
+/* slider section end CSS */
+
+
+
+
+/* ############################################## */
+/* about section style start */
+.about{
+    margin-top: 70px;
+}
+.child-3{
+    float: left;
+    width: 32%;
+    border: 1px solid #333;
+    text-align: center;
+}
+.about-2, .about-3{
+    margin-left: 1.7%;
+}
+.child-about{
+    padding: 50px 0px;
+    text-align: center;
+    border-radius: 5px;
+    padding-bottom:90px;
+}
+.child-about h2{
+    margin-bottom: 20px;
+}
+.child-about p{
+    margin-bottom: 50px;
+    padding: 0px 35px;
+    font-family: 'arial';
+    line-height: 30px;
+    font-size: 16px;
+}
+.child-about a{
+    color: #000;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid #444;
+    font-weight: 600;
+}
+.child-about a:hover{
+    background-color: #28a80f;
+    color: #fff;
+    border-color: #28a80f;
+    border-radius: 3px;
+}
+/* about section style end */
+
+
+
+/* ############################################## */
+/* charity section  style start */
+.charity{
+    margin-top: 65px;
+}
+.charity-2,
+.charity-3{
+    margin-left: 1.7%;
+}
+.child-charity {
+    border: 0px solid;
+}
+.child-charity .charity-img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.child-charity img{
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+background-color: #040a0cb4;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+}
+
+.charity-img:hover .overlay {
+height: 100%;
+}
+
+.text{
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text h3{
+    color: white;
+    font-size: 25px;
+}
+.charity .charity-description{
+    width: 45%;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.charity .charity-description h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.charity .charity-description p{
+    margin: 10px 0px;
+}
+.child-charity .child-charity-text{
+    margin-top: 30px;
+    text-align: left;
+}
+.child-charity .child-charity-text h3{
+    font-size: 20px;
+}
+.child-charity .child-charity-text p{
+    margin: 10px 0px;
+}
+.charity-btn{
+    margin-top: 25px;
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    background-color: #47C62E;
+    color: #fff;
+    font-family: 'roboto';
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+.charity-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* charity section  style end */
+
+
+
+/* #################################################### */
+/* banner section CSS start */
+.banner{
+    margin-top: 50px;
+    height: 350px;
+}
+#banner{
+    background: url(../img/poor-5089406__340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    animation: banner 20s infinite;
+}
+@keyframes banner{
+    0%{
+        background: url(../img/poor-5089406__340.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    25%{
+        background: url(../img/sister-5033365__340.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(../img/people-1550501__340.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background: url(../img/cloth-donatea.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(../img/black-white-photo-person-forest_250224-288.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.banner .banner-title{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000000b9;
+    z-index: 99;
+    text-align: center;
+}
+.banner .banner-title h2{
+    color: #fff;
+    margin-top: 11%;
+    font-size: 40px;
+}
+/* banner section CSS end */
+
+
+
+
+/* ################################################### */
+/* donations section style start */
+.donation{
+    margin-top: 80px;
+}
+.donation .donation-img{
+    width: 50%;
+    float: left;
+    position: relative;
+    height: 300px;
+}
+.donation .donation-img img{
+    height: 100%;
+}
+.donation .donation-text{
+    width: 48%;
+    float: right;
+    padding-left: 2%;
+}
+.donation .donation-text h2{
+    margin: 10px 0px;
+}
+.donation .donation-text p{
+    margin: 20px 0px;
+}
+/* donations section style end */
+
+
+
+
+/* ########################################## */
+/* partner section start */
+.partner{
+    margin-top: 60px;
+    padding: 20px 0px;
+    overflow: hidden;
+
+}
+.partner h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.partner .partner-img{
+ width: 16%;
+ float: left;
+ text-align: center;
+}
+.partner .partner-img img{
+ max-width: 60px;
+ height: 60px;
+}
+/* partner section end */
+
+
+
+/* ############################################## */
+/* footer section start */
+.footer{
+    margin-top: 50px;
+    padding: 30px 0px;
+    border-top: 1px solid #999;
+}
+.footer .child-footer{
+    width: 23.5%;
+    float: left;
+}
+.footer-2,
+.footer-3,
+.footer-4{
+    margin-left: 2%;
+}
+.child-footer ul{
+    list-style: none;
+    margin-top: 15px;
+}
+.child-footer ul li{
+    display: block;
+    line-height: 30px;
+}
+.child-footer ul li a{
+    color: #444;
+    font-family: 'roboto';
+    font-weight: 400;
+}
+
+.footer-1 img{
+    width: auto;
+    height: 60px;
+}
+.footer-1 p{
+    margin-top: 10px;
+}
+
+.footer-2 h3,
+.footer-2 ul{
+    padding-left: 15px;
+}
+.footer-4 .contact-us{
+    margin-top: 15px;
+}
+.footer-4 .contact-us h4{
+    margin-bottom: 7px;
+}
+.footer-4 .contact-us a{
+    display: block;
+    line-height:30px;
+}
+.child-footer ul li a:hover,
+.footer-4 .contact-us a:hover{
+    color: #47C62E;
+}
+/* footer section end */
+
+
+
+
+/* ############################################### */
+/* copyright section style start */
+.copyright{
+    width: 100%;
+    height: 60px;
+    background-color: #ddd;
+    text-align: center;
+    padding-top: 30px;
+}
+/* copyright section style end */
